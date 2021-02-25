@@ -2,12 +2,12 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  margin: auto;
-  /* essayer Full width*/
-  width: 100%;
-  margin: auto;
-  padding-left: 48px;
-  padding-right: 48px;
+  margin: 0;
+}
+
+header, section {
+padding: 0 20px;
+
 }
 
 li {
@@ -43,7 +43,8 @@ header > a:hover {
   width: 10%;
 }
 
-a.sign-up:active {
+a.sign-up {
+  font-weight: 700;
   color: #0065fc;
 }
 
@@ -99,26 +100,25 @@ header a {
   margin-top: 1%;
 }
 
-.input.search {
+.input-search {
   display: inline;
-  padding : block;
-  border: 1px solid #f2f2f2;
+  padding : 1em;
   width: 100%;
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   height: 100%;
-}
-
-#site-search{
-  padding-block: 8.2%;
+  border-top : 1px solid rgba(0,0,0,0.2);
+  border-bottom : 1px solid rgba(0,0,0,0.2);
+  border-right: 0;
+  border-left: 0;
 }
 
 .gps-loc {
-  padding: 11px;
+  padding: 12px;
   border-radius: 0.75em 0 0 0.75em;
   background-color: #f2f2f2;
   width: 2%;
-  border: 1px solid #f2f2f2;
+  border: 0px solid #f2f2f2;
   text-align: center;
 }
 
@@ -131,7 +131,7 @@ header a {
   color: white;
   cursor: pointer;
   width: 100%;
-  border: 0px solid #0065fc;
+  border: 1px solid #0065fc;
 }
 
 .btn-search:hover {
@@ -452,6 +452,11 @@ figcaption.card-text-right-side {
   left: 38%;
 }
 
+.aside-stars {
+  position: absolute;
+  top: 115%;
+}
+
 .aside-stars .fa-star {
   color: #0065fc;
 }
@@ -478,14 +483,6 @@ h4.aside-title {
 
 p.aside-stars {
   line-height: 6em;
-}
-
-.aside-stars {
-  padding-top: 36%;
-}
-
-.center-start {
-  padding-top: 24%;
 }
 
 .container-right {
@@ -652,36 +649,18 @@ figcaption.activity-card-text {
 /* Fin du style Activités à Marseille */
 
 /* Style du footer */
-footer > #footer-items {
+
+footer {
+  background-color: #f2f2f2;
+  padding: 2% 0% 2%;
   display: flex;
   justify-content: space-around;
   align-content: flex-start;
 }
 
-footer {
-  background-color: #f2f2f2;
-  margin: auto;
-  width: 100%;
-  padding: 2% 0% 2%;
-}
-
 footer a {
   text-decoration: none;
   color: black;
-}
-
-.about {
-  position : relative
-  margin-left: -8%;
-}
-
-#footer-items {
-  display: flex;
-  flex-direction: row;
-}
-
-#footer-items > ul  li {
-  margin-top: 1rem;
 }
 
 .footer__title {
@@ -733,13 +712,6 @@ footer a {
         grid-template-columns: 23% 20% 23% 20%; */
     display: flex;
     flex-direction: row;
-  }
-
-  /* Footer */
-  footer > #footer-items {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: flex-start;
   }
 
 /*Large devices (desktops, 992px and up)*/
@@ -872,14 +844,6 @@ i.fa.fa-search.btn-search {
     padding-left: 65%;
   }
 
-  .aside-stars {
-    padding-top: 36%;
-  }
-
-  .center-start {
-    padding-top: 24%;
-  }
-
   figure.pop-img-marseille {
     display: flex;
     flex-direction: row;
@@ -930,8 +894,4 @@ i.fa.fa-search.btn-search {
 
   .double-cards {
     width: 100%;
-  }
-
-  .about {
-    margin-left: 0%;
   }
