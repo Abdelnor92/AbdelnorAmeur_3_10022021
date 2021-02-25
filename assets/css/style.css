@@ -4,7 +4,7 @@ body {
   font-family: "Raleway", sans-serif;
   margin: auto;
   /* essayer Full width*/
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding-left: 48px;
   padding-right: 48px;
@@ -99,13 +99,18 @@ header a {
   margin-top: 1%;
 }
 
-input.search {
+.input.search {
   display: inline;
+  padding : block;
   border: 1px solid #f2f2f2;
   width: 100%;
   font-size: 15px;
   text-align: center;
   height: 100%;
+}
+
+#site-search{
+  padding-block: 8.2%;
 }
 
 .gps-loc {
@@ -149,7 +154,7 @@ i.fa.fa-search.btn-search {
 
   #search-bar {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     padding-top: 4%;
     padding-bottom: 2%;
   }
@@ -167,14 +172,12 @@ i.fa.fa-search.btn-search {
 }
 
 #filters li:not(.title-filters) {
-  /*border: 1px solid #f2f2f2;*/
   border-radius: 35px 35px;
   margin-left: 2%;
 }
 
 #filters p {
   border: 3px solid #f2f2f2;
-  /* border: 3px solid #f2f2f2;*/
   border-radius: 30px;
   margin-top: 2vh;
   justify-content: center;
@@ -278,21 +281,6 @@ figure.img-marseille {
   text-decoration: none;
 }
 
-/* .heb-row {
-    border-radius: 20px;
-    background-color: #f2f2f2;
-    padding-top: 6%;
-    padding-left: 2em;
-    padding-right: 3%;
-    display: grid;
-    grid-template-columns: 31% 31% 31%;
-    grid-template-rows: 42% 42%;
-    grid-gap: 7% 4%;
-    width: 70%;
-    margin-right: -1%;
-    padding-bottom: 5%;
-} */
-
 .block-heb-marseille {
   width: 70%;
 }
@@ -389,11 +377,8 @@ i.fa.fa-star {
 
 /* Début du style pour le ASIDE  Populaire  */
 
-.pop-right {
-
-}
-
 .fas.fa-chart-line {
+  position : absolute;
   right : 10px;
 }
 
@@ -579,18 +564,9 @@ figure.img-activity-center {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-top-color: rgb(242, 242, 242);
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-right-color: rgb(242, 242, 242);
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-bottom-color: rgb(242, 242, 242);
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-left-color: rgb(242, 242, 242);
-  border-left-style: solid;
-  border-left-width: 1px;
+  border-color: rgb(242, 242, 242);
+  border-style: solid;
+  border-width: 1px;
   /* margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 15%;
@@ -695,6 +671,7 @@ footer a {
 }
 
 .about {
+  position : relative
   margin-left: -8%;
 }
 
@@ -722,17 +699,17 @@ footer a {
   font-weight: bold;
 }
 
-
 .activity-card-text > .card-title {
   font-weight: bold;
   font-style: normal;
   font-size: smaller;
   color: black;
-  margin-block-start: 1em;
+  margin-top: 1em; 
+  border-end-start-radius: 1em ;
   margin-block-end: 1em;
 }
 
-/* Fin du stylepour le footer */
+/* Fin du style footer */
 
   section#heb-marseille h3:not(.pop-right) {
     padding-top: 1%;
@@ -764,7 +741,6 @@ footer a {
     justify-content: space-evenly;
     align-content: flex-start;
   }
-}
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -775,7 +751,7 @@ i.fa.fa-search.btn-search {
   display: none;
 }
 
-/* FIN DSIPLAY LOUPE SEARCH  */
+/* FIN DISPLAY LOUPE SEARCH  */
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   #page {
@@ -791,7 +767,6 @@ i.fa.fa-search.btn-search {
     padding-top: 4%;
     padding-bottom: 2%;
   }
-
 
   /* FIN DISPLAY LOUPE SEARCH  */
 
@@ -950,15 +925,13 @@ i.fa.fa-search.btn-search {
   .double-activity-marseille {
     margin: 0px 0px;
     /* height: 100%; */
-    width: 100%;git 
+    width: 100%;
   }
 
   .double-cards {
     width: 100%;
   }
 
-  footer > #footer-items {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: flex-start;
-}
+  .about {
+    margin-left: 0%;
+  }
