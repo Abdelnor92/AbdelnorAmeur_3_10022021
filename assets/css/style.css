@@ -451,6 +451,11 @@ figcaption.card-text-right-side {
 .aside-stars {
   position: relative;
   top: 115%;
+  padding-top: 10%;
+}
+
+.aside-stars.center-start {
+  padding-top: 0;
 }
 
 .aside-stars .fa-star {
@@ -717,6 +722,10 @@ footer a {
 /*Ecrans inférieur 980px*/  
 @media (min-width:320px) and (max-width: 979px) {
 
+  body {
+    width: 100%;
+  }
+  
   header {
     margin-top: -10%;
   }
