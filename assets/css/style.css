@@ -2,7 +2,10 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  margin: 0;
+  width: 100%;
+  margin: auto;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 header, section {
@@ -231,8 +234,21 @@ section#info {
   margin-bottom: 3%;
 }
 
+.i-info {
+  display:flex;
+}
+
 .i-info a {
   text-decoration: none;
+}
+
+.i-info p {
+  margin-top: -1px;
+  margin-left: -2px;
+}
+
+.text-info {
+  padding-left: 10px;
 }
 
 .i-info span {
@@ -558,10 +574,7 @@ figure.img-activity {
 }
 /* contour des cartes */
 figure.img-activity-center {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
   border-color: rgb(242, 242, 242);
   border-style: solid;
   border-width: 1px;
@@ -723,15 +736,14 @@ footer a {
 @media (min-width:320px) and (max-width: 979px) {
 
   body {
-    width: 100%;
-  }
-  
-  header {
-    margin-top: -10%;
+    padding-left: 0;
+    padding-right:0;
+    margin: auto;
   }
 
-  header, section {
-    padding: auto;
+  header {
+    margin-top: -10%;
+    padding:0
   }
 
   #search-bar {
@@ -756,6 +768,7 @@ footer a {
   .nav-log {
     display: flex;
     position: absolute;
+    padding-left: 5%;
     margin:auto;
     width:auto;
   }
@@ -776,7 +789,7 @@ footer a {
   .sign-up {
     display:flex;
     position:relative;
-    margin-left:5%;
+    margin-right:5%;
   }
 
   .item-bar-hover.item-bar-hover-left {
@@ -839,6 +852,28 @@ footer a {
     display: flex;
     flex-direction: column;
   }
+
+  /*Taille images activités */
+
+  .activity-select-portrait img {
+    height: 7rem;
+  }
+
+  .activity-select-large img {
+    height: 7rem;
+}
+
+.activity-select-small img {
+  height: 7rem;
+}
+
+.activity-select-portrait-center img {
+  height: 7rem;
+}
+
+.activity-select img {
+  height: 7rem;
+}
 
   h3.title-activity {
     padding-left: 5%;
