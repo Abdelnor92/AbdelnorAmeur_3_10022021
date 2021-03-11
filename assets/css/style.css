@@ -850,10 +850,6 @@ footer a {
     background-color: white;
   }
 
-  section#heb-marseille h3:not(.pop-right) {
-    padding-left: 10%;
-}
-
   #populaire-side {
    	width: calc(100% + 40px);
 	margin-right: -20px;
@@ -882,7 +878,9 @@ footer a {
   }
 
   .heb-select {
-    width : 90%;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .activity-marseille {
@@ -910,10 +908,6 @@ footer a {
 
 .activity-select img {
   height: 7rem;
-}
-
-  h3.title-activity {
-    padding-left: 5%;
 }
 
   .activity-select-portrait.mobile-resize {
