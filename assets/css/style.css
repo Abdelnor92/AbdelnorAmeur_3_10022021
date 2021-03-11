@@ -757,7 +757,7 @@ footer a {
   }
 
   header {
-    margin-top: -10%;
+    margin-top: -20%;
     padding:0
   }
 
@@ -805,6 +805,7 @@ footer a {
     height: auto;
     padding-top:40%;
     margin-left:1px;
+    text-align: center;
   }
 
   .sign-up {
