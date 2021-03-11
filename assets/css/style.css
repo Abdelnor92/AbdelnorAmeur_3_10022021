@@ -746,8 +746,14 @@ footer a {
     padding:0
   }
 
+  header > nav > ul > li > a:hover {
+    border-top: none;;
+    border-bottom: 2px solid #0065fc;
+}
+
   #search-bar {
     padding-top: 10%;
+    justify-content: center;
   }
 
   #top-search > h1 {
@@ -790,6 +796,17 @@ footer a {
     display:flex;
     position:relative;
     margin-right:5%;
+  }
+
+  i.fa.fa-search.btn-search {
+    display: flex;
+    height: 16px;
+    width: 20%;
+    margin-left: 0;
+  }
+
+  .btn-search.btn-search.btn-search-desktop {
+    display:none;
   }
 
   .item-bar-hover.item-bar-hover-left {
