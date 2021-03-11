@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
 
+/* debug */
+/* * {
+  outline: 1px solid red;
+} */
+
 body {
   font-family: "Raleway", sans-serif;
   width: 100%;
   margin: auto;
-  padding-left: 48px;
-  padding-right: 48px;
+  /* padding-left: 48px; */
+  /* padding-right: 48px; */
 }
 
 header, section {
@@ -735,6 +740,16 @@ footer a {
 /*Ecrans inférieur 980px*/  
 @media (min-width:320px) and (max-width: 979px) {
 
+  header > nav > ul {
+
+  justify-content: flex-start;
+  }
+
+  header > nav > ul li{
+    width:50%;
+    height: 50%;
+  }
+
   body {
     padding-left: 0;
     padding-right:0;
@@ -786,7 +801,7 @@ footer a {
   .nav-content { 
     display: flex;
     flex-direction: row;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     padding-top:40%;
     margin-left:1px;
@@ -796,6 +811,8 @@ footer a {
     display:flex;
     position:relative;
     margin-right:5%;
+        position: absolute;
+    right: 0;
   }
 
   i.fa.fa-search.btn-search {
@@ -809,9 +826,9 @@ footer a {
     display:none;
   }
 
-  .item-bar-hover.item-bar-hover-left {
+  /* .item-bar-hover.item-bar-hover-left {
     padding-right: 35%;
-  }
+  } */
 
   .item-bar-hover.item-bar-hover-right {
     margin-right: -25%;
@@ -819,15 +836,16 @@ footer a {
 
   header a {
     margin-right:0;
+    margin-left:0;
   }
 
   .block-heb-marseille {
     display: flex;
     flex-direction: column;
-    width: 112%;
+    width: 100%;
     order: 2;
     margin-top: 10%;
-    margin-left: -6%;
+    /* margin-left: -6%; */
     background-color: white;
   }
 
@@ -836,8 +854,9 @@ footer a {
 }
 
   #populaire-side {
-    width: 112%;
-    margin-left: -6%;
+   	width: calc(100% + 40px);
+	margin-right: -20px;
+	margin-left: -20px;
     margin-top: 10%;
     border-radius: 0;
   }
@@ -925,7 +944,7 @@ footer a {
   footer {
     display: flex;
     flex-direction: column;
-    width: 110%;
+    /* width: 110%; */
     padding-left: 39px;
   }
 }
