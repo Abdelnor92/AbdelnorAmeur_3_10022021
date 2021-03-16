@@ -890,47 +890,19 @@ footer a {
 
   /*Taille images activités */
 
-  .activity-select-portrait img {
+  .activity-select-portrait img, .activity-select-large img, .activity-select-small img, .activity-select-portrait-center img, .activity-select img {
     height: 7rem;
   }
 
-  .activity-select-large img {
-    height: 7rem;
-}
-
-.activity-select-small img {
-  height: 7rem;
-}
-
-.activity-select-portrait-center img {
-  height: 7rem;
-}
-
-.activity-select img {
-  height: 7rem;
-}
-
   .activity-select-portrait.mobile-resize {
-    width : auto;
-    height : auto;
     margin-top:50px;
-    margin-bottom: 40px;
   }
 
   .double-activity-marseille {
-    width : 100%;
-    height : auto;
     margin-left: 1px;
-    margin-bottom : 40px;
   }
 
-  .activity-select-portrait-center.mobile-resize {
-    width : 100%;
-    height : auto;
-    margin-bottom: 40px;
-  }
-
-  .double-cards {
+  .activity-select-portrait-center.mobile-resize, .double-cards, .double-activity-marseille, .activity-select-portrait.mobile-resize {
     width : 100%;
     height : auto;
     margin-bottom: 40px;
@@ -962,7 +934,7 @@ footer a {
   }
 
   #filters > ul {
-    flex-direction:row
+    flex-wrap: wrap;
   }
 
   #search-bar {
@@ -982,4 +954,14 @@ footer a {
     margin-left: 0;
     padding-bottom: 10px;
   }
+
+  h3.title-activity {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .activity-marseille {
+    padding-top: 3%;
+  }
+
 }
